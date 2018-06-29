@@ -231,7 +231,7 @@ type config struct {
 
 func main() {
 	var cfg config
-	flag.StringVar(&cfg.listenAddress, "web.listen-address", ":9408", "Address to listen on for web endpoints.")
+	flag.StringVar(&cfg.listenAddress, "web.listen-address", ":9456", "Address to listen on for web endpoints.")
 	flag.StringVar(&cfg.metricsPath, "web.telemetry-path", "/metrics", "Path under which to expose metrics.")
 	flag.Parse()
 
