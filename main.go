@@ -120,7 +120,7 @@ func (e *Exporter) Collect(ch chan<- prometheus.Metric) {
 }
 
 type lambdaResult struct {
-	Result string
+	Body string
 }
 
 func (e *Exporter) invokeLambda() (map[string]*dto.MetricFamily, error) {
@@ -144,7 +144,7 @@ func (e *Exporter) invokeLambda() (map[string]*dto.MetricFamily, error) {
 	}
 
 	var parser expfmt.TextParser
-	parsed, err := parser.TextToMetricFamilies(strings.NewReader(jsonResult.Result))
+	parsed, err := parser.TextToMetricFamilies(strings.NewReader(jsonResult.Body))
 	if err != nil {
 		return nil, err
 	}
