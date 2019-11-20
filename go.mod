@@ -5,7 +5,7 @@ go 1.12
 require (
 	github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc
 	github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf
-	github.com/aws/aws-sdk-go v1.14.16
+	github.com/aws/aws-sdk-go v1.25.38
 	github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
 	github.com/go-ini/ini v1.37.0
 	github.com/golang/protobuf v1.1.0
